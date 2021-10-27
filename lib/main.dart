@@ -2,7 +2,7 @@ import 'package:assignment_7/screens/product_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      title: 'Assignment 7',
       debugShowCheckedModeBanner: false,
       home: ProductScreen(),
     );
