@@ -14,7 +14,7 @@ TextStyle KproductStyle = const TextStyle(
   letterSpacing: -1,
   color: Colors.black,
   fontSize: 25,
-  fontWeight: FontWeight.bold,
+  fontWeight: FontWeight.w900,
 );
 
 TextStyle KcategoryStyle = const TextStyle(

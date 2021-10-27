@@ -1,4 +1,4 @@
-import 'package:assignment_7/screens/product_screen.dart';
+import 'package:assignment_7/screens/product_page/product_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
