@@ -16,24 +16,33 @@ class ProductSlider extends StatelessWidget {
           Stack(
             children: [
               CircleAvatar(
-                radius: 35,
+                radius: 45,
                 backgroundColor: kproductPrimaryColor,
                 child: CircleAvatar(
-                  backgroundColor: Colors.red.withOpacity(0.5),
-                  radius: 32,
-                  backgroundImage: const AssetImage(
-                    "assets/images/slider-1.jpg",
+                  radius: 41,
+                  child: Container(
+                    decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(50)),
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            colorFilter: ColorFilter.mode(
+                                Colors.black45, BlendMode.darken),
+                            image: AssetImage('assets/images/slider-1.jpg'))),
                   ),
                 ),
               ),
               Positioned(
                 top: 7,
-                left: 10,
+                left: 30,
                 bottom: 8,
                 child: IconButton(
+                    padding: const EdgeInsets.all(0),
                     onPressed: () {},
-                    icon: const Icon(Icons.arrow_back_ios_new,
-                        color: Colors.white)),
+                    icon: const Icon(
+                      Icons.arrow_back_ios_rounded,
+                      color: Colors.redAccent,
+                      size: 40,
+                    )),
               ),
             ],
           ),
@@ -54,22 +63,32 @@ class ProductSlider extends StatelessWidget {
           Stack(
             children: [
               CircleAvatar(
-                radius: 35,
+                radius: 45,
                 backgroundColor: kproductPrimaryColor,
-                child: const CircleAvatar(
-                  radius: 32,
-                  backgroundImage: AssetImage("assets/images/slider-2.jpg"),
+                child: CircleAvatar(
+                  radius: 41,
+                  child: Container(
+                    decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(50)),
+                        image: DecorationImage(
+                            fit: BoxFit.cover,
+                            colorFilter: ColorFilter.mode(
+                                Colors.black45, BlendMode.darken),
+                            image: AssetImage('assets/images/slider-2.jpg'))),
+                  ),
                 ),
               ),
               Positioned(
                 top: 7,
-                left: 10,
+                left: 5,
                 bottom: 8,
                 child: IconButton(
+                    padding: const EdgeInsets.all(0),
                     onPressed: () {},
                     icon: const Icon(
                       Icons.arrow_forward_ios_rounded,
-                      color: Colors.white,
+                      color: Colors.red,
+                      size: 40,
                     )),
               ),
             ],

@@ -6,14 +6,17 @@ class ProductDescription extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(40, 20, 40, 10),
+      padding: const EdgeInsets.fromLTRB(40, 20, 30, 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-              '''Tempor qui laboris ex elit adipisicing ut esse in aute laborum pariatur dolore irure. pariatur dolore irure pariatur dolore irure ''',
-              style: TextStyle(fontSize: 20)),
+              '''Tempor qui laboris ex elit adipisicing ut esse in aute laborum pariatur dolore irure. pariatur dolore irure pariatur dolore irure pariatur dolore irure. ''',
+              style: TextStyle(fontSize: 17)),
+          const SizedBox(
+            height: 10,
+          ),
           const SizedBox(
             height: 10,
           ),
@@ -22,7 +25,7 @@ class ProductDescription extends StatelessWidget {
             style: TextStyle(color: Colors.redAccent, fontSize: 22.9),
           ),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,

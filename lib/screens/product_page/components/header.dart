@@ -23,27 +23,33 @@ class Header extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 0.7,
               child: TextFormField(
                 decoration: InputDecoration(
-                    // border: InputBorder.none,
                     contentPadding: const EdgeInsets.all(8),
                     prefixIconConstraints: const BoxConstraints(minWidth: 50),
                     fillColor: catalogBoxColor,
                     filled: true,
-                    // enabledBorder: OutlinedBorder(side: ),
-
                     border: const OutlineInputBorder(
-                        borderSide:
-                            BorderSide(width: 0.0, color: Colors.transparent),
+                        borderSide: BorderSide(
+                          width: 0.0,
+                          // color: Colors.transparent,
+                          style: BorderStyle.none,
+                        ),
                         borderRadius: BorderRadius.all(Radius.circular(50))),
-                    prefixIcon: const Icon(Icons.search),
-                    hintText: 'Search Your Food'),
+                    prefixIcon: const Icon(
+                      Icons.search,
+                      color: Colors.grey,
+                    ),
+                    hintText: 'Search Your Food',
+                    hintStyle: const TextStyle(
+                      color: Colors.grey,
+                    )),
               ),
             ),
             CircleAvatar(
-              radius: 19,
+              radius: 21,
               backgroundColor: kproductPrimaryColor,
               child: const CircleAvatar(
-                radius: 16,
-                backgroundImage: AssetImage("assets/images/user.png"),
+                radius: 19,
+                backgroundImage: AssetImage("assets/images/user.jpg"),
               ),
             ),
           ],
